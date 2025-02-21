@@ -22,11 +22,11 @@ spec:
         - name: backend
           resources:
             requests:
-              cpu: 800m
+              cpu: 1000m
               memory: 512Mi
             limits:
-              cpu: 1100m
-              memory: 864Mi
+              cpu: 1500m
+              memory: 1024Mi
           #사용할 이미지, tag 없으니 latest로 사용
           image: ghcr.io/briankim913/weekly4_kubernetes:1.0.1
           #쿠버네티스에게 로컬에 이미자가 없으면 pull 하도록
