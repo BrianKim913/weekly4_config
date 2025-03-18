@@ -11,7 +11,7 @@ spec:
       path: backend
     - repoURL: https://github.com/BrianKim913/weekly4_config.git
       targetRevision: HEAD
-      path: frontends
+      path: frontend
   destination:
     server: https://kubernetes.default.svc
     namespace: backend
