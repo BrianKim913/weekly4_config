@@ -1,14 +1,15 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: backend
+  name: frontend
   namespace: backend
+
   labels:
-    app: backend
+    app: frontend
 spec:
   type: ClusterIP
   selector:
-    app: backend
+    app: frontend
   ports:
     # 사용하는 네트워크 프로토콜
     - protocol: TCP

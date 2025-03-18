@@ -5,16 +5,17 @@ metadata:
   namespace: backend
   annotations:
     kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/load-balancer-arn: <myarn>
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
     alb.ingress.kubernetes.io/ssl-redirect: "443"
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:488157851585:certificate/9b097851-7f8c-4593-a7ae-7f1b3d465bdc
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:488157851585:certificate/67dd6652-5686-449b-83d6-793aac2e58ff
 spec:
   rules:
     - http:
         paths:
-          - path: /
+          - path: /api
             pathType: Prefix
             backend:
               service:

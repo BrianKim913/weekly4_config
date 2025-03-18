@@ -1,0 +1,26 @@
+#Deployment 오브젝트의 API 버젼
+apiVersion: apps/v1
+#생성할 오브젝트 type
+kind: Deployment
+metadata:
+  #오브젝트 이름
+  name: frontend
+  namespace: backend
+  labels:
+    app: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+        - name: frontend
+          image: ghcr.io/briankim913/ekstest:sha-52d9580
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 9001
