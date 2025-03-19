@@ -16,4 +16,4 @@ spec:
       #서비스가 노출트는 포트
       port: 80
       # pod가 노출하는 포트이자 서비스가 target하는 포트
-      targetPort: 9001
+      targetPort: 80

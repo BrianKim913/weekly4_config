@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: ghcr.io/briankim913/ekstest:sha-52d9580
+          image: ghcr.io/briankim913/ekstest:sha-0d30c8d
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 9001
+            - containerPort: 80
