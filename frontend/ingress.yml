@@ -8,9 +8,10 @@ metadata:
     alb.ingress.kubernetes.io/load-balancer-arn: arn:aws:elasticloadbalancing:ap-northeast-2:488157851585:loadbalancer/app/eks-alb/11e2f6342d210c1f
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
-    alb.ingress.kubernetes.io/ssl-redirect: "443"
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-northeast-2:488157851585:certificate/67dd6652-5686-449b-83d6-793aac2e58ff
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP: 80"}]'
+    # alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
+    # alb.ingress.kubernetes.io/ssl-redirect: "443"
+    # alb.ingress.kubernetes.io/certificate-arn: <arn for cert>
 spec:
   rules:
     - http:
