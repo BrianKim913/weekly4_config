@@ -5,7 +5,7 @@ metadata:
   namespace: backend
   annotations:
     kubernetes.io/ingress.class: alb
-    alb.ingress.kubernetes.io/load-balancer-arn: arn:aws:elasticloadbalancing:ap-northeast-2:488157851585:loadbalancer/app/eks-alb/11e2f6342d210c1f
+    alb.ingress.kubernetes.io/load-balancer-arn: arn:aws:elasticloadbalancing:ap-northeast-2:488157851585:loadbalancer/app/k8s-backend-backendi-477d898597/d38f7581e12d28b2
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
